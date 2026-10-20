@@ -1,0 +1,19 @@
+{
+  "name": "osint-panel-bookmarklet",
+  "version": "1.0.0",
+  "description": "Browser bookmarklet that extracts OSINT selectors from the current page and offers domain pivots",
+  "license": "MIT",
+  "author": "C3n7ral051nt4g3ncy (@OSINT_Tactical)",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "npm run build && node --test test/osint-panel.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0",
+    "terser": "^5.31.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

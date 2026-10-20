@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OSINT Panel — Install</title>
+<style>
+  :root { --bg:#0d1117; --panel:#161b22; --fg:#c9d1d9; --muted:#8b949e; --line:#30363d; --go:#238636; --link:#58a6ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.6 system-ui, -apple-system, Segoe UI, sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { margin:0 0 4px; font-size:26px; }
+  .sub { color:var(--muted); margin:0 0 28px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:20px; margin:0 0 20px; }
+  .bm { display:inline-block; padding:10px 20px; border-radius:8px; background:var(--go); color:#fff; font-weight:600; text-decoration:none; cursor:grab; }
+  .bm.test { background:var(--line); }
+  code { background:var(--bg); border:1px solid var(--line); padding:1px 6px; border-radius:4px; font-size:13px; }
+  li { margin:6px 0; }
+  a { color:var(--link); }
+  .muted { color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>OSINT Panel</h1>
+  <p class="sub">Bookmarklet v{{VERSION}} · page extractor &amp; domain pivot panel</p>
+
+  <div class="card">
+    <ol>
+      <li>Show your bookmarks bar: <code>Ctrl+Shift+B</code> (Windows/Linux) or <code>Cmd+Shift+B</code> (macOS).</li>
+      <li><b>Drag</b> the green button onto the bookmarks bar. Clicking it here does nothing useful.</li>
+      <li>Open any normal website and click the bookmark.</li>
+    </ol>
+    <p><a class="bm" href="{{BOOKMARKLET}}" onclick="return false">OSINT Panel</a></p>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Not working?</h3>
+    <p>Drag this test bookmarklet too and click it on a normal website. If no alert appears, bookmarklets are blocked by your browser setup, not by this code.</p>
+    <p><a class="bm test" href="{{TEST}}" onclick="return false">Bookmarklet test</a></p>
+    <p class="muted">Bookmarklets never run on the new tab page, <code>chrome://</code> / <code>about:</code> pages, browser extension stores or built-in PDF viewers.</p>
+  </div>
+
+  <p class="muted">Source, documentation and licence: <a href="https://github.com/C3n7ral051nt4g3ncy">github.com/C3n7ral051nt4g3ncy</a></p>
+</main>
+</body>
+</html>
