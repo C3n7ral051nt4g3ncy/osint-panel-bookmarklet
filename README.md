@@ -78,6 +78,12 @@ Browsers percent-decode a `javascript:` URL before running it. A literal `%` in 
 
 The workflow in `.github/workflows/pages.yml` builds, tests and deploys `dist/` to GitHub Pages on every push to `main`. Enable it once: **Settings → Pages → Source: GitHub Actions**.
 
+## Contributors
+
+- [C3n7ral051nt4g3ncy](https://github.com/C3n7ral051nt4g3ncy), author
+- [Claude](https://claude.ai) (Anthropic), code assistance
+- [Les Blaireaux des Légendes](https://github.com/Les-Blaireaux-des-Legendes) (BDL), testing and feedback
+
 ## Author
 
 C3n7ral051nt4g3ncy · [GitHub](https://github.com/C3n7ral051nt4g3ncy) · [X @OSINT_Tactical](https://x.com/OSINT_Tactical) · [LinkedIn](https://www.linkedin.com/in/centralosintagency)
